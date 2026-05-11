@@ -2,20 +2,33 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Abrindo Gmail...</title>
+<title>Abrir Gmail</title>
 </head>
-<body>
+<body style="font-family:Arial;text-align:center;padding-top:80px;">
+
+<h2>Abrir pesquisa no Gmail</h2>
+
+<button onclick="abrirGmail()"
+style="font-size:22px;padding:15px 25px;border:none;border-radius:10px;">
+
+Abrir Gmail
+
+</button>
 
 <script>
 
-const gmailSearch =
-"https://mail.google.com/mail/mu/mp/557/#tl/search/9021";
+function abrirGmail() {
 
-window.location.href = "googlegmail://";
+    window.location.href = "googlegmail://";
 
-setTimeout(() => {
-    window.location.href = gmailSearch;
-}, 1000);
+    setTimeout(() => {
+
+        window.location.href =
+        "https://mail.google.com/mail/mu/mp/557/#tl/search/9021";
+
+    }, 1000);
+
+}
 
 </script>
 
